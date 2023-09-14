@@ -76,7 +76,7 @@ public class CRMService {
 
 
     public List<ContactRecord> findAllContacts() {
-        List<Contact> all = contactRepository.findAll();
+        List<Contact> all = contactRepository.findAllWithCompany();
         return all.stream()
                 .map(this::toContactRecord).toList();
     }

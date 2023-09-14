@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="refactor code, fix selection after save">
+    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="fix review items">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/routes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/about/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/about/contact/ContactsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactsView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694698864700</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix review items">
+      <option name="closed" value="true" />
+      <created>1694705497837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694705497837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor code for legibility" />
     <MESSAGE value="refactor code, fix selection after save" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code, fix selection after save" />
+    <MESSAGE value="fix review items" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix review items" />
   </component>
 </project>
