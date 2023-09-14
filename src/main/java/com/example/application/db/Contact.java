@@ -23,7 +23,7 @@ public class Contact {
     private String email;
 
     @NotNull
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Company company;
 
     public Contact() {

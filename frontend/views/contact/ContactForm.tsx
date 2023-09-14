@@ -12,10 +12,9 @@ import ContactRecord from "Frontend/generated/com/example/application/services/C
 interface ContactFormProps {
     contact?: ContactRecord | null;
     onSubmit?: (contact: ContactRecord) => Promise<void>;
-    hidden?: boolean;
 }
 
-export default function ContactForm({contact, onSubmit, hidden}: ContactFormProps) {
+export default function ContactForm({contact, onSubmit}: ContactFormProps) {
 
     const [companies, setCompanies] = useState<SelectItem[]>([]);
 
@@ -28,15 +27,17 @@ export default function ContactForm({contact, onSubmit, hidden}: ContactFormProp
 
     async function getCompanies() {
         const companies = await CRMService.findAllCompanies();
-        const companyItems = companies.map(company => ({
-            label: company.name,
-            value: company.id + ""
-        }));
+        const companyItems = companies.map(company => {
+            return {
+                label: company.name,
+                value: company.id + ""
+            };
+        });
         setCompanies(companyItems);
     }
 
     return (
-        <div className="flex flex-col gap-s items-start" hidden={hidden}>
+        <div className="flex flex-col gap-s items-start">
 
             <TextField label="First name" {...field(model.firstName)} />
             <TextField label="Last name" {...field(model.lastName)} />

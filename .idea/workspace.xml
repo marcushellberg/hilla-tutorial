@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/views/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="refactor code, fix selection after save">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/AboutView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/AboutView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/ContactsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/ContactsView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/about/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/about/contact/ContactsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactsView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +79,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/views" />
+      <recent name="$PROJECT_DIR$/frontend/views/about/contact" />
+      <recent name="$PROJECT_DIR$/frontend/views/about" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,20 +103,31 @@
       <updated>1694574342910</updated>
       <workItem from="1694574344811" duration="15333000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor code for legibility">
+      <option name="closed" value="true" />
+      <created>1694696939019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694696939019</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor code, fix selection after save">
+      <option name="closed" value="true" />
+      <created>1694698864700</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1694698864700</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor code for legibility" />
+    <MESSAGE value="refactor code, fix selection after save" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code, fix selection after save" />
   </component>
 </project>

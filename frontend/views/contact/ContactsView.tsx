@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import {CRMService} from "Frontend/generated/endpoints";
 import {Grid} from "@hilla/react-components/Grid";
 import {GridColumn} from "@hilla/react-components/GridColumn";
-import ContactForm from "Frontend/views/about/contact/ContactForm";
+import ContactForm from "Frontend/views/contact/ContactForm";
 
 export default function ContactsView() {
     const [contacts, setContacts] = useState<ContactRecord[]>([]);
@@ -36,10 +36,9 @@ export default function ContactsView() {
                 <GridColumn path="company.name" header="Company name"/>
             </Grid>
 
-            <ContactForm
-                contact={selected}
-                onSubmit={onContactSaved}
-                hidden={!selected}/>
+            {selected &&
+                <ContactForm contact={selected} onSubmit={onContactSaved}/>
+            }
         </div>
     );
 }

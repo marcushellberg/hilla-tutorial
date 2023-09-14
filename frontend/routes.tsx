@@ -1,4 +1,4 @@
-import ContactsView from 'Frontend/views/about/contact/ContactsView';
+import ContactsView from 'Frontend/views/contact/ContactsView';
 import MainLayout from 'Frontend/views/MainLayout.js';
 import { lazy } from 'react';
 import {createBrowserRouter, RouteObject} from 'react-router-dom';
