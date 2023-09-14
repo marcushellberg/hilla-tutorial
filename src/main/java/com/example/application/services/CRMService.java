@@ -9,14 +9,12 @@ import dev.hilla.BrowserCallable;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 
 @AnonymousAllowed
 @BrowserCallable
-@Service
 public class CRMService {
 
     public record ContactRecord(
