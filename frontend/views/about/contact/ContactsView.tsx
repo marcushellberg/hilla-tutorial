@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import {CRMService} from "Frontend/generated/endpoints";
 import {Grid} from "@hilla/react-components/Grid";
 import {GridColumn} from "@hilla/react-components/GridColumn";
-import ContactForm from "Frontend/views/ContactForm";
+import ContactForm from "Frontend/views/about/contact/ContactForm";
 
 export default function ContactsView() {
     const [contacts, setContacts] = useState<ContactRecord[]>([]);
@@ -20,6 +20,7 @@ export default function ContactsView() {
         } else {
             setContacts(contacts => [...contacts, saved]);
         }
+        setSelected(saved);
     }
 
     return (
