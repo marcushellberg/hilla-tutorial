@@ -6,7 +6,6 @@ import {useForm} from "@hilla/react-form";
 import ContactRecordModel from "Frontend/generated/com/example/application/services/CRMService/ContactRecordModel";
 import {CRMService} from "Frontend/generated/endpoints";
 import {useEffect, useState} from "react";
-import CompanyRecord from "Frontend/generated/com/example/application/services/CRMService/CompanyRecord";
 import ContactRecord from "Frontend/generated/com/example/application/services/CRMService/ContactRecord";
 
 interface ContactFormProps {
@@ -19,7 +18,10 @@ export default function ContactForm({contact, onSubmit}: ContactFormProps) {
     const [companies, setCompanies] = useState<SelectItem[]>([]);
 
     const {field, model, submit, reset, read} = useForm(ContactRecordModel, { onSubmit } );
-    useEffect(() => read(contact), [contact]);
+    
+    useEffect(() => {
+        read(contact);
+    }, [contact]);
 
     useEffect(() => {
         getCompanies();

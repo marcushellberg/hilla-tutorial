@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="fix review items">
+    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="Use query instead of eager fetch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/ContactRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/ContactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/contact/ContactsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contact/ContactsView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694705497837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Use query instead of eager fetch">
+      <option name="closed" value="true" />
+      <created>1694709047734</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694709047734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +145,7 @@
     <MESSAGE value="refactor code for legibility" />
     <MESSAGE value="refactor code, fix selection after save" />
     <MESSAGE value="fix review items" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix review items" />
+    <MESSAGE value="Use query instead of eager fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use query instead of eager fetch" />
   </component>
 </project>

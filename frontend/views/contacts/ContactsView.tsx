@@ -3,7 +3,7 @@ import {useEffect, useState} from 'react';
 import {CRMService} from "Frontend/generated/endpoints";
 import {Grid} from "@hilla/react-components/Grid";
 import {GridColumn} from "@hilla/react-components/GridColumn";
-import ContactForm from "Frontend/views/contact/ContactForm";
+import ContactForm from "Frontend/views/contacts/ContactForm";
 
 export default function ContactsView() {
     const [contacts, setContacts] = useState<ContactRecord[]>([]);
@@ -24,7 +24,7 @@ export default function ContactsView() {
     }
 
     return (
-        <div className="p-m flex gap-m h-full">
+        <div className="p-m flex gap-m">
             <Grid
                 items={contacts}
                 onActiveItemChanged={e => setSelected(e.detail.value)}

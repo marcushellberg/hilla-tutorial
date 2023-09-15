@@ -2,10 +2,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <!-- Project from https://start.vaadin.com/project/028be323-d3ff-489c-a2cf-1f51ef517f12 -->
+    <!-- Project from https://start.vaadin.com/project/77005403-e2f6-4ec8-83bb-86f7842545d5 -->
     <groupId>com.example.application</groupId>
-    <artifactId>hilla-tutorial</artifactId>
-    <name>hilla-tutorial</name>
+    <artifactId>hilla-crm</artifactId>
+    <name>hilla-crm</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -46,18 +46,16 @@
             <artifactId>line-awesome</artifactId>
             <version>1.1.0</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
         <dependency>
-          <groupId>com.h2database</groupId>
-          <artifactId>h2</artifactId>
-          <scope>runtime</scope>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>

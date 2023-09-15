@@ -17,6 +17,14 @@ import java.util.List;
 @BrowserCallable
 public class CRMService {
 
+    private final CompanyRepository companyRepository;
+    private final ContactRepository contactRepository;
+
+    public CRMService(CompanyRepository companyRepository, ContactRepository contactRepository) {
+        this.companyRepository = companyRepository;
+        this.contactRepository = contactRepository;
+    }
+
     public record ContactRecord(
             Long id,
             @NotNull
@@ -61,19 +69,10 @@ public class CRMService {
         );
     }
 
-    private final CompanyRepository companyRepository;
-    private final ContactRepository contactRepository;
-
-    public CRMService(CompanyRepository companyRepository, ContactRepository contactRepository) {
-        this.companyRepository = companyRepository;
-        this.contactRepository = contactRepository;
-    }
-
     public List<CompanyRecord> findAllCompanies() {
         return companyRepository.findAll().stream()
                 .map(this::toCompanyRecord).toList();
     }
-
 
     public List<ContactRecord> findAllContacts() {
         List<Contact> all = contactRepository.findAllWithCompany();
