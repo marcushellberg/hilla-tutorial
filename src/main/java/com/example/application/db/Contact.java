@@ -10,18 +10,9 @@ public class Contact {
     @Id
     @GeneratedValue
     private Long id;
-
-    @NotNull
-    @Size(min = 1, max = 50)
     private String firstName;
-    @NotNull
-    @Size(min = 1, max = 50)
     private String lastName;
-    @NotNull
-    @Email
     private String email;
-
-    @NotNull
     @ManyToOne
     private Company company;
 
@@ -29,11 +20,8 @@ public class Contact {
     }
 
     public Contact(Long id, String firstName, String lastName, String email, Company company) {
+        this(firstName, lastName, email, company);
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.company = company;
     }
 
     public Contact(String firstName, String lastName, String email, Company company) {

@@ -11,8 +11,6 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 import java.util.List;
-
-
 @AnonymousAllowed
 @BrowserCallable
 public class CRMService {
@@ -71,13 +69,15 @@ public class CRMService {
 
     public List<CompanyRecord> findAllCompanies() {
         return companyRepository.findAll().stream()
-                .map(this::toCompanyRecord).toList();
+                .map(this::toCompanyRecord)
+                .toList();
     }
 
     public List<ContactRecord> findAllContacts() {
         List<Contact> all = contactRepository.findAllWithCompany();
         return all.stream()
-                .map(this::toContactRecord).toList();
+                .map(this::toContactRecord)
+                .toList();
     }
 
     public ContactRecord save(ContactRecord contact) {

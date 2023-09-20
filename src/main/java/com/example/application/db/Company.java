@@ -15,10 +15,7 @@ public class Company {
     @Id
     @GeneratedValue
     private Long id;
-    @NotNull
-    @Size(min = 1, max = 100)
     private String name;
-
     @OneToMany(mappedBy = "company")
     private Set<Contact> employees = new HashSet<>();
 
