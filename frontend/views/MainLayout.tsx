@@ -4,18 +4,21 @@ import Placeholder from 'Frontend/components/placeholder/Placeholder';
 import {useRouteMetadata} from 'Frontend/util/routing';
 import {Suspense} from 'react';
 import {NavLink, Outlet} from 'react-router-dom';
-import css from './MainLayout.module.css';
+
+const navLinkClasses = ({ isActive }: any) => {
+    return `block rounded-m p-s ${isActive ? 'bg-primary-10 text-primary' : 'text-body'}`;
+};
 
 export default function MainLayout() {
     const currentTitle = useRouteMetadata()?.title ?? 'My App';
     return (
         <AppLayout primarySection="drawer">
-            <div slot="drawer" className={css.drawer}>
-                <header>
+            <div slot="drawer" className="flex flex-col justify-between h-full p-m">
+                <header className="flex flex-col gap-m">
                     <h1 className="text-l m-0">Hilla CRM</h1>
                     <nav>
-                        <NavLink to="/">Contacts</NavLink>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/" className={navLinkClasses}>Contacts</NavLink>
+                        <NavLink to="/about" className={navLinkClasses}>About</NavLink>
                     </nav>
                 </header>
             </div>
