@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="e">
+    <list default="true" id="da4644f4-cd1b-444d-bf15-c31a81c53d5e" name="Changes" comment="updates based on review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/about/AboutView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/about/AboutView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/db/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/db/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/contacts/ContactForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/contacts/ContactsView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/contacts/ContactsView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/services/CRMService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="react-query" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "starting-point",
     "last_opened_file_path": "/Users/mhellber/Desktop/hilla-tutorial",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,7 +89,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="hilla-crm" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.application.Application" />
       <method v="2">
@@ -106,7 +106,7 @@
       <updated>1694574342910</updated>
       <workItem from="1694574344811" duration="15333000" />
       <workItem from="1694791191832" duration="2614000" />
-      <workItem from="1695228543751" duration="793000" />
+      <workItem from="1695228543751" duration="1268000" />
     </task>
     <task id="LOCAL-00001" summary="refactor code for legibility">
       <option name="closed" value="true" />
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694709047734</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updates based on review">
+      <option name="closed" value="true" />
+      <created>1695229508889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695229508889</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +159,7 @@
     <MESSAGE value="refactor code, fix selection after save" />
     <MESSAGE value="fix review items" />
     <MESSAGE value="Use query instead of eager fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use query instead of eager fetch" />
+    <MESSAGE value="updates based on review" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates based on review" />
   </component>
 </project>

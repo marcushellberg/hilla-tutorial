@@ -12,7 +12,7 @@ export default function MainLayout() {
         <AppLayout primarySection="drawer">
             <div slot="drawer" className={css.drawer}>
                 <header>
-                    <h1 className="text-l m-0">My App</h1>
+                    <h1 className="text-l m-0">Hilla CRM</h1>
                     <nav>
                         <NavLink to="/">Contacts</NavLink>
                         <NavLink to="/about">About</NavLink>
